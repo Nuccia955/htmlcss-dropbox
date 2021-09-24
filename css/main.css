@@ -4,3 +4,60 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}
+
+/* UTILITIES */
+.text-align_r {
+    text-align: right;
+}
+
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.float_r {
+    float: right;
+}
+
+.float_l {
+    float: left;
+}
+
+
+/* HEADER */
+header {
+    line-height: 80px;
+    width: 100%;
+}
+
+header div {
+    display: inline-block;
+}
+
+header .logo {
+    width: 12%;
+    text-align: center;
+}
+
+header .logo img {
+    vertical-align: middle;
+}
+
+header nav {
+    width: 44%;
+    padding: 0 20px;
+}
+
+header ul {
+    display: inline-block;
+}
+header ul li {
+    display: inline-block;
+    text-decoration: none;
+}
