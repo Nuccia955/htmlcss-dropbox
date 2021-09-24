@@ -7,7 +7,7 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 /* UTILITIES */
@@ -69,6 +69,21 @@ a {
     display: block;
 }
 
+h3 {
+    font-size: 2em;
+}
+
+h5 {
+    font-size: 1.3em;
+}
+h6 {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+span {
+    font-size: 0.8em;
+}
 
 /* HEADER */
 header {
@@ -107,6 +122,7 @@ header ul li a {
 a.button {
     padding:10px 20px;
     line-height: 13px;
+    text-align: center;
 }
 
 .blue_button {
@@ -129,7 +145,7 @@ a.button {
 
 .jumbotron h1 {
     margin-bottom: 45px;
-    font-size: 65px;
+    font-size: 4em;
 }
 
 .jumbotron_text {
@@ -169,6 +185,7 @@ a.button {
 
 .office_contact h6 {
     border-bottom: 2px solid #d0d0d3;
+    padding: 15px;
 }
 
 .rate_plan .office_contact {
@@ -176,9 +193,14 @@ a.button {
 }
 .rate_plan .office_contact > h3 {
     width: 70%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 8px 20px;
 }
 
 .rate_plan .office_contact > .button {
-    width: 30%;
+    width: 27%;
+    margin-right: 3%;
+    margin-top: 30px;
 }
 
