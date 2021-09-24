@@ -15,6 +15,10 @@ body {
     text-align: right;
 }
 
+.text-align_c {
+    text-align: center;
+}
+
 .clearfix {
     content: '';
     display: table;
@@ -27,6 +31,32 @@ body {
 
 .float_l {
     float: left;
+}
+
+a {
+    display: inline-block;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: dodgerblue;
+}
+
+.w_50 {
+    width: 50%;
+}
+
+.w_100 {
+    width: 100%;
+}
+
+.px_20 {
+    padding: 0 20px;
+}
+
+.display_b {
+    display: block;
 }
 
 
@@ -60,4 +90,32 @@ header ul {
 header ul li {
     display: inline-block;
     text-decoration: none;
+}
+
+/* MAIN */
+/* JUMBOTRON */
+.jumbotron {
+    background-color: green;
+}
+
+.jumbotron > .container {
+    position: relative;
+    bottom: -80px;
+}
+.jumbotron_image {
+    height: 400px;
+    background-color: red;
+}
+
+.jumbotron h1 {
+    margin-bottom: 45px;
+}
+
+.jumbotron_text {
+    width: 35%;
+    margin-right: 5%;
+}
+
+.jumbotron_image {
+    width: 60%;
 }
