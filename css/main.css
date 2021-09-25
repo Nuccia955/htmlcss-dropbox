@@ -42,7 +42,6 @@ a {
 .container {
     width: 80%;
     margin: 0 auto;
-    /* background-color: dodgerblue; */
 }
 
 .w_50 {
@@ -53,8 +52,8 @@ a {
     width: 100%;
 }
 
-.px_20 {
-    padding: 0 20px;
+.px_40 {
+    padding: 0 40px;
 }
 
 .mb_30 {
@@ -93,6 +92,10 @@ h6 {
 span {
     font-size: 0.8em;
     margin-bottom: 18px;
+}
+
+p {
+    line-height: 2em;
 }
 
 .color_gray {
@@ -197,6 +200,13 @@ a.button {
     margin-bottom: 75px;
 }
 
+.rate_plan .plan_options .button,
+.rate_plan .office_contact .button {
+    width: 100%;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
 .rate_plan .office_contact {
     margin-top: 50px;
 }
@@ -247,6 +257,17 @@ a.button {
     color: #0564ff;
 }
 
+.find_team > .col_image {
+    width: 55%;
+    margin-right: 5%;
+}
 
+.find_team > .col_text {
+    width: 40%;
+}
+
+.find_team .button {
+    border: 1px solid black;
+}
 
 
