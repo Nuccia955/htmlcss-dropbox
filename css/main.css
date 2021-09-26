@@ -69,6 +69,10 @@ a {
     margin-top: 30px;
 }
 
+.mb_150 {
+    margin-bottom: 150px;
+}
+
 .mt_150 {
     margin-top: 150px;
 }
@@ -86,6 +90,10 @@ h3 {
     margin: 28px 0;
 }
 
+h4 {
+    font-size: 1.1em;
+}
+
 h5 {
     font-size: 1.3em;
     margin-bottom: 18px;
@@ -100,7 +108,6 @@ h6 {
 
 span {
     font-size: 0.8em;
-    margin-bottom: 18px;
 }
 
 p {
@@ -187,6 +194,12 @@ a.button {
     background-color: #0061ff;
     color: white;
 }
+
+.white_button {
+    border: 1px solid black;
+    background-color: white;
+}
+
 /* MAIN */
 /* JUMBOTRON */
 .jumbotron {
@@ -307,10 +320,6 @@ a.button {
     width: 40%;
 }
 
-.white_button {
-    border: 1px solid black;
-}
-
 /* DROPBOX FUNCTIONS */
 .col_function {
     width: 25%;
@@ -368,3 +377,32 @@ a.button {
     filter: invert(100);
 }
 
+.agencies > div:last-child h2 {
+    width: 45%;
+    margin-right: 20%;
+    color: #61082b ;
+}
+
+.agencies > div:last-child .button {
+    width: 25%;
+}
+
+/* FAQs */
+.faqs .question {
+    padding: 30px 0;
+    font-weight: 900;
+    border-top: 1px solid #dcdcde;
+}
+
+.faqs .question:last-child {
+    border-bottom: 1px solid #dcdcde ;
+}
+
+.faqs .question h4 {
+    width: 90%;
+}
+
+.faqs .question .down_arrow {
+    font-size: 1.1em;
+    width: 10%;
+}
