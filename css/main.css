@@ -56,6 +56,10 @@ a {
     padding: 0 40px;
 }
 
+.mt_30 {
+    margin-top: 30px;
+}
+
 .mb_30 {
     margin-bottom: 30px;
 }
@@ -266,8 +270,28 @@ a.button {
     width: 40%;
 }
 
-.find_team .button {
+.white_button {
     border: 1px solid black;
+}
+
+/* DROPBOX FUNCTIONS */
+.col_function {
+    width: 25%;
+    margin-bottom: 125px;
+}
+
+.col_function p {
+    line-height: initial;
+}
+
+.col_function p > span {
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+.dropbox_functions .col_function:nth-child(2),
+.dropbox_functions .col_function:nth-child(5) {
+    margin: 0 12.5%;
 }
 
 
