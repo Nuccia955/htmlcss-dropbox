@@ -406,3 +406,31 @@ a.button {
     font-size: 1.1em;
     width: 10%;
 }
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: white;
+    padding-bottom: 50px;
+}
+
+footer a {
+    color: white;
+}
+footer .footer_col {
+    width: 20%;
+}
+
+footer .footer_col ul li {
+    list-style-type: none;
+    padding: 5px 0;
+    font-size: 0.8em;
+}
+
+footer hr {
+    width: 10%;
+}
+
+footer span.language {
+    color: #666666;
+}
