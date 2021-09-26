@@ -111,6 +111,38 @@ p {
     color: #697986;
 }
 
+.bg_red {
+    background-color: #d5001f;
+}
+
+.bg_cocacola-red {
+    background-color: #ff1c1c;
+}
+
+.bg_dark-blue {
+    background-color: #0d2481;
+}
+
+.bg_light-green {
+    background-color: #a2d39b;
+}
+
+.bg_yellow {
+    background-color: #ffd830;
+}
+
+.bg_sky-blue {
+    background-color: #b4d0e7;
+}
+
+.bg_dodger-blue {
+    background-color: #0093ce;
+}
+
+.bg_dark-red {
+    background-color: #61082b;
+}
+
 /* HEADER */
 header {
     line-height: 80px;
@@ -313,6 +345,7 @@ a.button {
     padding: 50px;
     font-size: 0.8em;
     background-color: #f5f5f5;
+    height: calc(100vw / 3.5);
 }
 
 .agencies .col_text > img {
@@ -325,8 +358,13 @@ a.button {
 }
 
 .agencies .col_brand {
-    height: 170px;
-    background-color: red;
-    border: 1px solid black;
+ padding: 0 40px;
+ line-height: calc(100vw / 7);
+}
+
+.agencies .col_brand img {
+    width: 100%;
+    vertical-align: middle;
+    filter: invert(100);
 }
 
