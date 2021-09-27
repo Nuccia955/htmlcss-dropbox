@@ -223,6 +223,11 @@ hr {
 header {
     line-height: 80px;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 2;
 }
 
 header .logo {
@@ -447,9 +452,14 @@ a.button {
     width: 90%;
 }
 
-.faqs .question .down_arrow {
+.faqs .question .down_arrow,
+.faqs .question .up_arrow {
     font-size: 1.1em;
     width: 10%;
+}
+
+.faqs .question .up_arrow {
+    display: none;
 }
 
 /* FOOTER */
@@ -547,7 +557,12 @@ footer a:hover {
     display: none;
 }
 
-.faqs .question:hover .answer {
+.faqs .question:hover .answer,
+.faqs .question:hover .up_arrow {
     display: block;
+}
+
+.faqs .question:hover .down_arrow {
+    display: none;
 }
 
