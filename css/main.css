@@ -26,10 +26,6 @@ body {
     clear: both;
 }
 
-.flex {
-    display: flex;
-}
-
 /* .float_r {
     float: right;
 } */
@@ -311,6 +307,7 @@ a.button {
 
 .col.rate_option {
     width: 30%;
+    min-height: 1000px;
 }
 
 .plan_options > .col.rate_option:nth-child(2) {
