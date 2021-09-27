@@ -15,7 +15,7 @@
     <!-- HEADER -->
     <header class="clearfix">
         <div class="logo float_l">
-            <a href="#">
+            <a class="logo_link" href="#">
                 <img src="./img/logo-small.png" alt="dropbox logo">
             </a>
         </div>
@@ -25,10 +25,10 @@
                     <a href="#">Perchè Dropbox</a>
                 </li>
                 <li>
-                    <a href="#">Funzioni</a>
+                    <a href="#functions">Funzioni</a>
                 </li>
                 <li>
-                    <a href="#">Piani e prezzi</a>
+                    <a href="#rate_plan">Piani e prezzi</a>
                 </li>
             </ul>
         </nav>
@@ -38,7 +38,7 @@
                     <a href="#">Supporto</a>
                 </li>
                 <li>
-                    <a href="#">Contatta l'ufficio vendite</a>
+                    <a href="#office_contact">Contatta l'ufficio vendite</a>
                 </li>
                 <li>
                     <a href="#">Accedi</a>
@@ -59,7 +59,9 @@
                     <p class="display_b mb_30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rem iure architecto harum ad est, odit, et maxime pariatur nobis ullam assumenda quidem nemo ea, cum dolorum ipsum sit quis!</p>
                     <a class="button blue_button" href="#">Inizia la tua prova gratuita</a>
                     <span class="display_b mb_30">Annulla in qualsiasi momento</span>
-                    <i class="fas fa-arrow-down"></i>
+                    <a href="#find_dropbox_plan">
+                        <i class="fas fa-arrow-down"></i>
+                    </a>
                 </div>
                 <div class="jumbotron_image float_l">
                     <img class="w_100" src="./img/jumbo.png" alt="dropbox application">
@@ -68,13 +70,19 @@
         </section>
         
         <!-- RATE PLAN -->
-        <section class="rate_plan mt_150">
-            <h2 class="container_70">Trova il piano Dropbox Business che fa per te</h2>
+        <section id="rate_plan" class="rate_plan mt_150">
+            <h2 id="find_dropbox_plan" class="container_70">Trova il piano Dropbox Business che fa per te</h2>
             <div class="container_70 mb_30">
-                <input type="radio" id="annual_invoicing" name="invoicing" value="annual">
-                <label for="annual_invoicing">Fatturazione annuale</label>
-                <input type="radio" id="monthly_invoicing" name="invoicing" value="monthly">
-                <label for="monthly_invoicing">Fatturazione mensile</label>
+                <label class="radio" for="annual_invoicing">
+                    Fatturazione annuale
+                    <input type="radio" id="annual_invoicing" name="invoicing" value="annual" checked="checked">
+                    <span class="radiomark"></span>
+                </label>
+                <label class="radio" for="monthly_invoicing">
+                    Fatturazione mensile
+                    <input type="radio" id="monthly_invoicing" name="invoicing" value="monthly">
+                    <span class="radiomark"></span>
+                </label>
             </div>
             <div class="container_70 plan_options clearfix">
                 <div class="col gray_border rate_option float_l">
@@ -152,7 +160,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container_70 gray_border office_contact mt_50">
+            <div id="office_contact" class="container_70 gray_border office_contact mt_50">
                 <h6 class="w_100 text-align_c"><i class="far fa-building"></i>Team</h6>
                 <div class="clearfix w_100 px_40">
                     <h3 class="float_l">Enterprise</h3>
@@ -174,7 +182,7 @@
         </section>
 
         <!-- DROPBOX FUNCTIONS -->
-        <section class="dropbox_functions mt_150">
+        <section id="functions" class="dropbox_functions mt_150">
             <h2 class="container_70" mb_30">Esegui più operazioni con Dropbox Business</h2>
             <div class="container_70 clearfix">
                 <div class="col_function float_l">
