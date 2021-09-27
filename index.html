@@ -53,29 +53,35 @@
     <main>
         <!-- JUMBOTRON -->
         <section class="jumbotron">
-            <div class="container clearfix">
-                <h1 class="float_l w_100">Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
+            <div class="container_80 clearfix">
+                <h1 class="float_l mb_50 mt_50 w_100">Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
                 <div class="jumbotron_text float_l">
                     <p class="display_b mb_30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rem iure architecto harum ad est, odit, et maxime pariatur nobis ullam assumenda quidem nemo ea, cum dolorum ipsum sit quis!</p>
                     <a class="button blue_button" href="#">Inizia la tua prova gratuita</a>
-                    <span class="display_b">Annulla in qualsiasi momento</span>
+                    <span class="display_b mb_30">Annulla in qualsiasi momento</span>
+                    <i class="fas fa-arrow-down"></i>
                 </div>
                 <div class="jumbotron_image float_l">
-                    <img src="./img/jumbo.png" alt="dropbox application">
+                    <img class="w_100" src="./img/jumbo.png" alt="dropbox application">
                 </div>
             </div>
         </section>
         
         <!-- RATE PLAN -->
         <section class="rate_plan mt_150">
-            <h2 class="container">Trova il piano Dropbox Business che fa per te</h2>
-            <!--.container   o   o  -->
-            <div class="container plan_options clearfix">
+            <h2 class="container_70">Trova il piano Dropbox Business che fa per te</h2>
+            <div class="container_70 mb_30">
+                <input type="radio" id="annual_invoicing" name="invoicing" value="annual">
+                <label for="annual_invoicing">Fatturazione annuale</label>
+                <input type="radio" id="monthly_invoicing" name="invoicing" value="monthly">
+                <label for="monthly_invoicing">Fatturazione mensile</label>
+            </div>
+            <div class="container_70 plan_options clearfix">
                 <div class="col gray_border rate_option float_l">
                     <h6 class="text-align_c"><i class="far fa-user"></i>Singolo</h6>
                     <div class="px_40">
                         <h3>Professional</h3>
-                        <h5>19,99&euro;</h5>
+                        <h4>19,99&euro;</h4>
                         <span class="color_gray">/mese</span>
                         <ul class="fa-ul w_100">
                             <li><span class="fa-li"><i class="far fa-user"></i></span>1 Utente</li>
@@ -85,7 +91,7 @@
                         <a href="#" class="button blue_button mb_30">Prova gratis per 30 giorni</a>
                         <span class="display_b mb_30">oppure <a href="#" class="blue_underline">acquista ora</a></span>
                         <hr>
-                        <h5>Punti salienti del piano</h5>
+                        <h4>Punti salienti del piano</h4>
                         <ul class="check_list fa-ul">
                             <li><span class="fa-li"><i class="fas fa-check"></i></span>Invia file fino a 100 GB con Dropbox Tranfert</li>
                             <li><span class="fa-li"><i class="fas fa-check"></i></span>Cartelle offline su dispositivi mobili</li>
@@ -99,7 +105,7 @@
                     <h6 class="text-align_c"><i class="far fa-building"></i>Team</h6>
                     <div class="px_40">
                         <h3>Standard</h3>
-                        <h5>19,99&euro;</h5>
+                        <h4>19,99&euro;</h4>
                         <span class="color_gray">/ utente/ mese, a partire da 3 utenti</span>
                         <ul class="fa-ul w_100">
                             <li><span class="fa-li"><i class="fas fa-user-plus"></i></span>1 Utente</li>
@@ -109,7 +115,7 @@
                         <a href="#" class="button blue_button mb_30">Prova gratis per 30 giorni</a>
                         <span class="display_b mb_30">oppure <a href="#" class="blue_underline">acquista ora</a></span>
                         <hr>
-                        <h5>Punti salienti del piano</h5>
+                        <h4>Punti salienti del piano</h4>
                         <ul class="check_list fa-ul">
                             <li><span class="fa-li"><i class="fas fa-check"></i></span>Invia file fino a 100 GB con Dropbox Tranfert</li>
                             <li><span class="fa-li"><i class="fas fa-check"></i></span>Cartelle offline su dispositivi mobili</li>
@@ -124,7 +130,7 @@
                     <h6 class="text-align_c"><i class="far fa-building"></i>Team</h6>
                     <div class="px_40">
                         <h3>Advanced</h3>
-                        <h5>19,99&euro;</h5>
+                        <h4>19,99&euro;</h4>
                         <span class="color_gray">/ utente / mese, a partire da 3 utenti</span>
                         <ul class="fa-ul w_100">
                             <li><span class="fa-li"><i class="fas fa-user-plus"></i></span>1 Utente</li>
@@ -134,7 +140,7 @@
                         <a href="#" class="button blue_button mb_30">Prova gratis per 30 giorni</a>
                         <span class="display_b mb_30">oppure <a href="#" class="blue_underline">acquista ora</a></span>
                         <hr>
-                        <h5>Punti salienti del piano</h5>
+                        <h4>Punti salienti del piano</h4>
                         <ul class="check_list fa-ul">
                             <li><span class="fa-li"><i class="fas fa-check"></i></span>Invia file fino a 100 GB con Dropbox Tranfert</li>
                             <li><span class="fa-li"><i class="fas fa-check"></i></span>Cartelle offline su dispositivi mobili</li>
@@ -146,16 +152,16 @@
                     </div>
                 </div>
             </div>
-            <div class="container gray_border office_contact">
+            <div class="container_70 gray_border office_contact mt_50">
                 <h6 class="w_100 text-align_c"><i class="far fa-building"></i>Team</h6>
                 <div class="clearfix w_100 px_40">
                     <h3 class="float_l">Enterprise</h3>
-                    <a href="#" class="float_l button blue_button">Contatta l'ufficio vendite</a>
-                    <h5 class="float_l w_100 mb_30">Contatta l'ufficio vendite per i prezzi</h5>
+                    <a href="#" class="float_l button blue_button mt_30">Contatta l'ufficio vendite</a>
+                    <h4 class="float_l w_100 mb_30">Contatta l'ufficio vendite per i prezzi</h4>
                     <span class="float_l mb_30 w_100">Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala</span>
                 </div>
             </div>
-            <div class="container find_team clearfix mt_150">
+            <div class="container_70 find_team clearfix mt_150">
                 <div class="col_image float_l">
                     <img class="w_100" src="./img/partner.png" alt="people smiling">
                 </div>
@@ -169,8 +175,8 @@
 
         <!-- DROPBOX FUNCTIONS -->
         <section class="dropbox_functions mt_150">
-            <h2 class="container mb_30">Esegui più operazioni con Dropbox Business</h2>
-            <div class="container clearfix">
+            <h2 class="container_70" mb_30">Esegui più operazioni con Dropbox Business</h2>
+            <div class="container_70 clearfix">
                 <div class="col_function float_l">
                     <img class="w_100" src="./img/business-feature-switching-tools.png" alt="dropbox tools">
                     <h3>Passa di meno da uno strumento all'altro</h3>
@@ -224,22 +230,22 @@
 
         <!-- AGENCIES -->
         <section class="agencies">
-            <div class="container">
+            <div class="container_70">
                 <h2 class="w_50 mb_30">Più di 500.000 team utilizzano Dropbox Business</h2>
                 <a href="#" class="blue_underline mb_30">Scopri di più sui nostri clienti</a>
             </div>
             <div class="w_100 clearfix">
                 <aside class="float_l clearfix">
-                    <div class="col_brand bg_light-green w_50 float_l">
+                    <div class="card_brand bg_light-green w_50 float_l">
                         <img src="./img/designit.svg" alt="designit logo">
                     </div>
-                    <div class="col_brand bg_dark-red w_50 float_l">
+                    <div class="card_brand bg_dark-red w_50 float_l">
                         <img src="./img/arizona_state_university.svg" alt="arizona university logo">
                     </div>
-                    <div class="col_brand bg_dodger-blue w_50 float_l">
+                    <div class="card_brand bg_dodger-blue w_50 float_l">
                         <img src="./img/university_of_florida.svg" alt="florida university logo">
                     </div>
-                    <div class="col_brand bg_cocacola-red w_50 float_l">
+                    <div class="card_brand bg_cocacola-red w_50 float_l">
                         <img src="./img/topps.svg" alt="topps logo">
                     </div>
                 </aside>
@@ -250,22 +256,22 @@
                     <address>Morthen Thomsen, Global IT Lead</address>
                 </div>
                 <aside class="float_l">
-                    <div class="col_brand bg_red w_50 float_l">
+                    <div class="card_brand bg_red w_50 float_l">
                         <img src="./img/world_bicycle_relief.svg" alt="world bicycle relief logo">
                     </div>
-                    <div class="col_brand bg_sky-blue w_50 float_l">
+                    <div class="card_brand bg_sky-blue w_50 float_l">
                         <img src="./img/hearst_corp.svg" alt="hearst corp logo">
                     </div>
-                    <div class="col_brand bg_dark-blue w_50 float_l">
+                    <div class="card_brand bg_dark-blue w_50 float_l">
                         <img src="./img/lonely_planet.svg" alt="lonely planet logo">
                     </div>
-                    <div class="col_brand bg_yellow w_50 float_l">
+                    <div class="card_brand bg_yellow w_50 float_l">
                         <img src="./img/clear_channel.svg" alt="clear channel logo">
                     </div>
                 </aside>
             </div>
             <div class="bg_sky-blue">
-                <div class="container clearfix">
+                <div class="container_70 clearfix">
                     <h2 class="mt_150 mb_150 float_l">Porta Dropbox Business nella tua azienda.</h2>
                     <a href="#" class="button white_button mt_150 float_l">Inizia la tua prova gratuita</a>
                 </div>
@@ -274,23 +280,23 @@
 
         <!-- FAQs -->
         <section class="faqs">
-            <div class="container mb_150">
+            <div class="container_70 mb_150">
                 <h3 class="mt_150 mb_50">Domande frequenti</h3>
                 <div class="question clearfix w_100"> 
-                    <h4 class="float_l">Qual è la differenza tra Dropbox Business e Dropbox Advanced</h4>
-                    <span class="down_arrow float_l text-align_r">arrow</span>
+                    <h5 class="float_l">Qual è la differenza tra Dropbox Business e Dropbox Advanced</h5>
+                    <span class="down_arrow float_l text-align_r"><i class="fas fa-chevron-down"></i></span>
                 </div>
                 <div class="question clearfix w_100"> 
-                    <h4 class="float_l">Qual è la differenza tra Dropbox Business e Dropbox Advanced</h4>
-                    <span class="down_arrow float_l text-align_r">arrow</span>
+                    <h5 class="float_l">Qual è la differenza tra Dropbox Business e Dropbox Advanced</h5>
+                    <span class="down_arrow float_l text-align_r"><i class="fas fa-chevron-down"></i></span>
                 </div>
                 <div class="question clearfix w_100"> 
-                    <h4 class="float_l">Qual è la differenza tra Dropbox Business e Dropbox Advanced</h4>
-                    <span class="down_arrow float_l text-align_r">arrow</span>
+                    <h5 class="float_l">Qual è la differenza tra Dropbox Business e Dropbox Advanced</h5>
+                    <span class="down_arrow float_l text-align_r"><i class="fas fa-chevron-down"></i></span>
                 </div>
                 <div class="question clearfix w_100"> 
-                    <h4 class="float_l">Qual è la differenza tra Dropbox Business e Dropbox Advanced</h4>
-                    <span class="down_arrow float_l text-align_r">arrow</span>
+                    <h5 class="float_l">Qual è la differenza tra Dropbox Business e Dropbox Advanced</h5>
+                    <span class="down_arrow float_l text-align_r"><i class="fas fa-chevron-down"></i></span>
                 </div>
             </div>
         </section>
@@ -299,108 +305,110 @@
 
     <!-- FOOTER -->
     <footer>
-        <div class="container clearfix">
+        <div class="container_80 clearfix">
             <div class="footer_col float_l">
-                <h4 class="mt_150 mb_30">Dropbox</h4>
+                <h5 class="mt_150 mb_30">Dropbox</h5>
                 <ul class="mb_150">
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Applicazione Desktop</a>
                     </li>
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Perchè Dropbox</a>
                     </li>
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Piani</a>
                     </li>
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Sicurezza</a>
                     </li>
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Funzioni</a>
                     </li>
                 </ul>
             </div>
             <div class="footer_col float_l">
-                <h4 class="mt_150 mb_30">Dropbox</h4>
+                <h5 class="mt_150 mb_30">Prodotti</h5>
                 <ul class="mb_150">
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Applicazione Desktop</a>
                     </li>
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Perchè Dropbox</a>
                     </li>
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Piani</a>
                     </li>
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Sicurezza</a>
                     </li>
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Funzioni</a>
                     </li>
                 </ul>
             </div>
             <div class="footer_col float_l">
-                <h4 class="mt_150 mb_30">Dropbox</h4>
+                <h5 class="mt_150 mb_30">Azienda</h5>
                 <ul class="mb_150">
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Applicazione Desktop</a>
                     </li>
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Perchè Dropbox</a>
                     </li>
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Piani</a>
                     </li>
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Sicurezza</a>
                     </li>
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Funzioni</a>
                     </li>
                 </ul>
             </div>
             <div class="footer_col float_l">
-                <h4 class="mt_150 mb_30">Dropbox</h4>
+                <h5 class="mt_150 mb_30">Supporto</h5>
                 <ul class="mb_150">
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Applicazione Desktop</a>
                     </li>
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Perchè Dropbox</a>
                     </li>
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Piani</a>
                     </li>
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Sicurezza</a>
                     </li>
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Funzioni</a>
                     </li>
                 </ul>
             </div>
             <div class="footer_col float_l">
-                <h4 class="mt_150 mb_30">Dropbox</h4>
+                <h5 class="mt_150 mb_30">Community</h5>
                 <ul class="mb_150">
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Applicazione Desktop</a>
                     </li>
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Perchè Dropbox</a>
                     </li>
                     <li>
-                        <a href="#">link</a>
+                        <a href="#">Piani</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="container">
+        <div class="container_80">
             <hr class="mb_50">
-            <span class="language">Italiano</span>
+            <span class="language">
+                <i class="fas fa-globe-americas"></i>
+                Italiano
+                <i class="fas fa-sort-up"></i>
+            </span>
         </div>
-
-           
     </footer>
 </body>
 </html>
