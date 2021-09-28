@@ -26,15 +26,15 @@ body {
     clear: both;
 }
 
-/* .float_r {
+.float_r {
     float: right;
-} */
+}
 
 .float_l {
     float: left;
 }
 
-a {
+a, button {
     display: inline-block;
     text-decoration: none;
     color: black;
@@ -227,7 +227,7 @@ header {
     top: 0;
     left: 0;
     background-color: white;
-    z-index: 2;
+    z-index: 3;
 }
 
 header .logo {
@@ -250,9 +250,34 @@ header ul li {
     list-style-type: none;
 }
 
-header ul li a:not(.button, .logo_link) {
+header ul li > a,
+header ul li .dropdown > a {
     margin-right: 40px;
     padding: 2px 0;
+}
+
+header .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+header .dropdown_content {
+    position: absolute;
+    left: -20px;
+    display: none;
+    background-color: #fff;
+    min-width: 250px;
+    font-size: 0.8em;
+    text-align: left;
+}
+
+header .dropdown:hover .dropdown_content {
+    display: block;
+}
+
+header .dropdown_content a {
+    padding: 10px 30px;
+    line-height: 20px;
 }
 
 a.button {
@@ -438,11 +463,12 @@ a.button {
 }
 
 /* FAQs */
-.faqs .question {
+.faqs .question.dropdown {
     padding: 30px 0;
     font-weight: 900;
     border-top: 1px solid #dcdcde;
     position: relative;
+    display: inline-block;
 }
 
 .faqs .question:last-child {
@@ -455,12 +481,9 @@ a.button {
 
 .faqs .question .down_arrow,
 .faqs .question .up_arrow {
+    display: block;
     font-size: 1.1em;
     width: 10%;
-}
-
-.faqs .question .up_arrow {
-    display: none;
 }
 
 /* FOOTER */
@@ -504,9 +527,14 @@ html {
     cursor: pointer;
 }
 
-header a:not(.button, .logo_link):hover {
+header nav ul li > a:not(.button):hover,
+header nav .dropdown > a:hover {
     border-bottom: 2px solid black;
     padding: 0;
+}
+
+header nav .dropdown_content a:hover{
+    background-color: rgb(211, 211, 211);
 }
 
 footer a:hover {
@@ -544,26 +572,29 @@ footer a:hover {
     }
 }
 
-.faqs .question .answer {
+.faqs .question .dropdown_content {
     width: 100%;
     position: absolute;
-    top: 65px;
+    top: 70px;
     left: 0;
     background-color: white;
     font-weight: 300;
     overflow: hidden;
     z-index: 1;
-    padding: 30px 0;
+    padding: 25px 0;
     border-bottom: 1px solid gray;
     display: none;
 }
 
-.faqs .question:hover .answer,
-.faqs .question:hover .up_arrow {
+
+.faqs .question.dropdown:hover .dropdown_content,
+.faqs .question.question.dropdown:hover .up_arrow {
     display: block;
 }
-
-.faqs .question:hover .down_arrow {
+.faqs .question.dropdown:hover .down_arrow,
+.faqs .question.dropdown .up_arrow {
     display: none;
 }
+
+
 
